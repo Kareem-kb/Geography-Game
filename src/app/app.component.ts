@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Country } from './data/data';
-import { DashBoradComponent } from './dash-borad/dash-borad.component';
+import { DashBoardComponent } from './dash-borad/dash-board.component';
 import { RandomSelectService } from './services/random-select.service';
 import { DataFetching } from './services/fetching.service';
 import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-root',
-  imports: [FormsModule, CommonModule, DashBoradComponent],
+  imports: [FormsModule, CommonModule, DashBoardComponent],
   template: ` <h1>Welcome to {{ title }}!</h1>
     <app-dash-borad />
     <label>

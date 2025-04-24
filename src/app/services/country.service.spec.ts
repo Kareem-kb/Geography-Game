@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { RandomSelectService } from './random-select.service';
+import { DataFetchingService } from './country.service';
 
-describe('RandomSelectService', () => {
-  let service: RandomSelectService;
+describe('DataFetchingService', () => {
+  let service: DataFetchingService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(RandomSelectService);
+    service = TestBed.inject(DataFetchingService);
   });
 
   it('should be created', () => {

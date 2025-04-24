@@ -10,6 +10,13 @@ export interface Country {
   equator: 'north' | 'south';
 }
 
+export interface historyLog {
+  selected: Country;
+  random: Country;
+  isCorrect: boolean;
+  direction: string;
+}
+
 export const countries: Country[] = [
   {
     id: 'AF',

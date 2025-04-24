@@ -6,44 +6,32 @@ import {
   OnChanges,
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Country } from '../data/data';
+import { Country, historyLog } from '../data/data';
 import { WinDialogComponent } from '../win-dialog/win-dialog.component';
 
+/**
+ * Component that displays the game dashboard with country comparison
+ */
 @Component({
   selector: 'app-dashboard',
   standalone: true,
   imports: [CommonModule, WinDialogComponent],
-  template: `
-    <section>
-      <ul class="space-y-4">
-        <ng-container *ngFor="let prop of countryProps">
-          <li class="border-2 p-4 rounded-lg" [ngClass]="getClass(prop.key)">
-            <div>
-              {{ selectedCountry[prop.key] }}
-              <span *ngIf="prop.arrow">{{ getArrow(prop.key) }}</span>
-            </div>
-          </li>
-        </ng-container>
-        <li class="border-2 border-gray-300 p-4 rounded-lg">
-          <div>direction: {{ getDirection() }}</div>
-        </li>
-      </ul>
-      <h1>{{ randomCountry.name }}</h1>
-      <app-win-dialog *ngIf="showModal" (playAgain)="onPlayAgain()" />
-    </section>
-  `,
+  templateUrl: './dashboard.component.html',
 })
 export class DashboardComponent implements OnChanges {
+  /** The country selected by the user */
   @Input({ required: true }) selectedCountry!: Country;
-  @Input({ required: true }) randomCountry!: Country;
-  @Output() newGame = new EventEmitter<void>();
-  @Output() resultLogged = new EventEmitter<{
-    selected: Country;
-    random: Country;
-    isCorrect: boolean;
-    direction: string;
-  }>();
 
+  /** The random country to guess */
+  @Input({ required: true }) randomCountry!: Country;
+
+  /** Event emitted when a new game is requested */
+  @Output() newGame = new EventEmitter<void>();
+
+  /** Event emitted when a result is logged */
+  @Output() resultLogged = new EventEmitter<historyLog>();
+
+  /** Properties to display for country comparison */
   countryProps: { key: keyof Country; arrow: boolean }[] = [
     { key: 'name', arrow: false },
     { key: 'equator', arrow: false },
@@ -52,52 +40,72 @@ export class DashboardComponent implements OnChanges {
     { key: 'population', arrow: true },
   ];
 
+  /** Whether to show the win modal */
   showModal = false;
 
+  /**
+   * Handles input changes and emits results
+   */
   ngOnChanges() {
-    if (this.selectedCountry && this.randomCountry) {
-      const result = {
-        selected: this.selectedCountry,
-        random: this.randomCountry,
-        isCorrect: this.selectedCountry.name === this.randomCountry.name,
-        direction: this.getDirection(),
-      };
-      this.resultLogged.emit(result);
+    if (!this.selectedCountry || !this.randomCountry) {
+      return;
+    }
 
-      if (result.isCorrect) {
-        setTimeout(() => (this.showModal = true), 1000);
-      }
+    const result: historyLog = {
+      selected: this.selectedCountry,
+      random: this.randomCountry,
+      isCorrect: this.selectedCountry.name === this.randomCountry.name,
+      direction: this.getDirection(),
+    };
+
+    this.resultLogged.emit(result);
+
+    if (result.isCorrect) {
+      setTimeout(() => (this.showModal = true), 1000);
     }
   }
 
-  onPlayAgain() {
+  /**
+   * Handles the play again action
+   */
+  onPlayAgain(): void {
     this.showModal = false;
     this.newGame.emit();
   }
 
-  // Keep only these 3 methods if needed
-  getClass(key: keyof Country) {
+  /**
+   * Gets the CSS class for a property based on comparison
+   */
+  getClass(key: keyof Country): string {
     return this.selectedCountry[key] === this.randomCountry[key]
       ? 'bg-green-400'
       : 'bg-red-100 border-red-500';
   }
 
-  getArrow(key: keyof Country) {
-    const diff =
-      (this.selectedCountry[key] as number) -
-      (this.randomCountry[key] as number);
+  /**
+   * Gets the arrow direction for numeric comparisons
+   */
+  getArrow(key: keyof Country): string {
+    const selectedValue = this.selectedCountry[key] as number;
+    const randomValue = this.randomCountry[key] as number;
+    const diff = selectedValue - randomValue;
     return diff > 0 ? '↓' : diff < 0 ? '↑' : '';
   }
 
-  getDirection() {
+  /**
+   * Calculates the direction from selected country to random country
+   */
+  getDirection(): string {
     const latDiff = this.randomCountry.latitude - this.selectedCountry.latitude;
     const lonDiff =
       this.randomCountry.longitude - this.selectedCountry.longitude;
-    const directions = [];
+    const directions: string[] = [];
+
     if (latDiff > 3) directions.push('north');
     if (latDiff < -3) directions.push('south');
     if (lonDiff > 3) directions.push('east');
     if (lonDiff < -3) directions.push('west');
+
     return directions.join(' ') || 'same location';
   }
 }

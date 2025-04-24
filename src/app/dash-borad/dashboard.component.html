@@ -1,0 +1,49 @@
+<section class="space-y-6">
+  <div class="bg-white rounded-xl shadow-md p-6">
+    <h2 class="text-2xl font-semibold text-gray-800 mb-4">Compare Countries</h2>
+
+    <ul class="space-y-4">
+      <ng-container *ngFor="let prop of countryProps">
+        <li
+          class="border-2 p-4 rounded-lg transition-all duration-300 hover:shadow-md"
+          [ngClass]="getClass(prop.key)">
+          <div class="flex items-center justify-between">
+            <span class="font-medium text-gray-700"
+              >{{ prop.key | titlecase }}:</span
+            >
+            <div class="flex items-center space-x-2">
+              <span class="text-lg">{{ selectedCountry[prop.key] }}</span>
+              <span
+                *ngIf="prop.arrow"
+                class="text-xl transition-transform duration-300"
+                [class.animate-bounce]="
+                  selectedCountry[prop.key] !== randomCountry[prop.key]
+                ">
+                {{ getArrow(prop.key) }}
+              </span>
+            </div>
+          </div>
+        </li>
+      </ng-container>
+
+      <li class="border-2 border-gray-300 p-4 rounded-lg bg-gray-50">
+        <div class="flex items-center justify-between">
+          <span class="font-medium text-gray-700">Direction:</span>
+          <span class="text-lg">{{ getDirection() }}</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="bg-blue-50 rounded-xl shadow-md p-6">
+    <h2 class="text-2xl font-semibold text-blue-800 mb-4">Target Country</h2>
+    <h1 class="text-3xl font-bold text-center text-blue-900 animate-pulse">
+      {{ randomCountry.name }}
+    </h1>
+  </div>
+
+  <app-win-dialog
+    *ngIf="showModal"
+    (playAgain)="onPlayAgain()"
+    class="animate-fade-in" />
+</section>

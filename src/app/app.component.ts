@@ -1,7 +1,7 @@
 import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Country, historyLog } from './data/data';
-import { DashboardComponent } from './dash-borad/dashboard.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 import { CountryService } from './services/country.service';
 import { CommonModule } from '@angular/common';
 import { HistoryLogComponent } from './history-log/history-log.component';
@@ -30,62 +30,31 @@ import { countries } from './data/data';
           </p>
         </header>
 
+        @if (selectedCountry) {
+          <app-dashboard
+            [selectedCountry]="selectedCountry"
+            [randomCountry]="randomCountry"
+            (newGame)="startNewGame()"
+            (resultLogged)="onResultLogged($event)"
+            class="animate-fade-in" />
+        }
+
+        @if (historyLog.length > 0) {
+          <app-history-log
+            [historyLog]="historyLog"
+            class="mt-8 animate-slide-up" />
+        }
+
         <div class="bg-white rounded-xl shadow-lg p-6 mb-8">
           <div class="mb-6">
             <app-autocomplete
               [countries]="countries"
-              (countrySelected)="onCountrySelected($event)"></app-autocomplete>
+              (countrySelected)="onCountrySelected($event)" />
           </div>
-
-          @if (selectedCountry) {
-            <app-dashboard
-              [selectedCountry]="selectedCountry"
-              [randomCountry]="randomCountry"
-              (newGame)="startNewGame()"
-              (resultLogged)="onResultLogged($event)"
-              class="animate-fade-in" />
-          }
-
-          @if (historyLog.length > 0) {
-            <app-history-log
-              [historyLog]="historyLog"
-              class="mt-8 animate-slide-up" />
-          }
         </div>
       </div>
     </div>
   `,
-  styles: [
-    `
-      @keyframes fadeIn {
-        from {
-          opacity: 0;
-        }
-        to {
-          opacity: 1;
-        }
-      }
-
-      @keyframes slideUp {
-        from {
-          transform: translateY(20px);
-          opacity: 0;
-        }
-        to {
-          transform: translateY(0);
-          opacity: 1;
-        }
-      }
-
-      .animate-fade-in {
-        animation: fadeIn 0.5s ease-out;
-      }
-
-      .animate-slide-up {
-        animation: slideUp 0.5s ease-out;
-      }
-    `,
-  ],
 })
 export class AppComponent implements OnInit {
   title = 'geography-game';

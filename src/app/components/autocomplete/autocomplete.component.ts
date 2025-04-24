@@ -15,6 +15,7 @@ import { Country } from '../../data/data';
         (ngModelChange)="onSearchChange($event)"
         (focus)="showSuggestions = true"
         (blur)="onBlur()"
+        (keydown.enter)="onEnter()"
         class="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
         placeholder="Enter country name..." />
 
@@ -25,6 +26,8 @@ import { Country } from '../../data/data';
         <div
           *ngFor="let country of filteredCountries"
           (click)="selectCountry(country)"
+          (keydown.enter)="selectCountry(country)"
+          tabindex="0"
           class="p-2 hover:bg-gray-100 cursor-pointer">
           {{ country.name }}
         </div>
@@ -67,7 +70,18 @@ export class AutocompleteComponent {
       this.showSuggestions = false;
     }
   }
-
+  onEnter(): void {
+    // Try to find an exact match
+    const match = this.countries.find(
+      c => c.name.toLowerCase() === this.searchTerm.trim().toLowerCase()
+    );
+    if (match) {
+      this.selectCountry(match);
+    } else {
+      this.showError = true;
+      this.showSuggestions = false;
+    }
+  }
   selectCountry(country: Country): void {
     this.searchTerm = country.name;
     this.countrySelected.emit(country);

@@ -1,45 +1,37 @@
-<section class="space-y-6">
-  <div class="bg-white rounded-xl shadow-md p-6">
-    <h2 class="text-2xl font-semibold text-gray-800 mb-4">Compare Countries</h2>
+<section>
+  <div>
+    <h2 class="text-xl font-semibold text-gray-800">Country Comparison</h2>
 
-    <ul class="space-y-4">
+    <ul class="flex justify-around p-0 list-none gap-2">
       <ng-container *ngFor="let prop of countryProps">
         <li
-          class="border-2 p-4 rounded-lg transition-all duration-300 hover:shadow-md"
-          [ngClass]="getClass(prop.key)">
-          <div class="flex items-center justify-between">
-            <span class="font-medium text-gray-700"
-              >{{ prop.key | titlecase }}:</span
-            >
-            <div class="flex items-center space-x-2">
-              <span class="text-lg">{{ selectedCountry[prop.key] }}</span>
-              <span
-                *ngIf="prop.arrow"
-                class="text-xl transition-transform duration-300"
-                [class.animate-bounce]="
-                  selectedCountry[prop.key] !== randomCountry[prop.key]
-                ">
-                {{ getArrow(prop.key) }}
-              </span>
-            </div>
-          </div>
+          class="w-full flex flex-col h-fit rounded-md p-2"
+          [ngClass]="
+            selectedCountry ? getClass(prop.key) : 'bg-gray-300 text-gray-600'
+          ">
+          <span class="text-gray-400 text-xm">{{ prop.key | titlecase }}</span>
+          <span class="text-xl">{{
+            selectedCountry ? selectedCountry[prop.key] : '&nbsp;'
+          }}</span>
         </li>
       </ng-container>
 
-      <li class="border-2 border-gray-300 p-4 rounded-lg bg-gray-50">
-        <div class="flex items-center justify-between">
-          <span class="font-medium text-gray-700">Direction:</span>
-          <span class="text-lg">{{ getDirection() }}</span>
-        </div>
+      <li
+        class="w-full flex flex-col h-fit rounded-md p-2"
+        [ngClass]="
+          selectedCountry
+            ? {
+                'bg-red-100': getDirection() !== 'Right on the spot',
+                'bg-green-100': getDirection() === 'Right on the spot',
+              }
+            : 'bg-gray-300 text-gray-600'
+        ">
+        <span class="text-gray-400 text-xm">Direction</span>
+        <span class="text-xl">{{
+          selectedCountry ? getDirection() : '&nbsp;'
+        }}</span>
       </li>
     </ul>
-  </div>
-
-  <div class="bg-blue-50 rounded-xl shadow-md p-6">
-    <h2 class="text-2xl font-semibold text-blue-800 mb-4">Target Country</h2>
-    <h1 class="text-3xl font-bold text-center text-blue-900 animate-pulse">
-      {{ randomCountry.name }}
-    </h1>
   </div>
 
   <app-win-dialog

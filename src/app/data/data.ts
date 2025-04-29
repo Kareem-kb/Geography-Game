@@ -7,7 +7,7 @@ export interface Country {
   latitude: number;
   longitude: number;
   avgTemperature: number;
-  equator: 'north' | 'south';
+  equator: 'North' | 'South';
 }
 
 export interface historyLog {
@@ -27,7 +27,7 @@ export const countries: Country[] = [
     latitude: 33.93911,
     longitude: 67.709953,
     avgTemperature: 15,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'AL',
@@ -38,7 +38,7 @@ export const countries: Country[] = [
     latitude: 41.153332,
     longitude: 20.168331,
     avgTemperature: 15,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'DZ',
@@ -49,7 +49,7 @@ export const countries: Country[] = [
     latitude: 28.033886,
     longitude: 1.659626,
     avgTemperature: 22,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'AD',
@@ -60,7 +60,7 @@ export const countries: Country[] = [
     latitude: 42.546245,
     longitude: 1.601554,
     avgTemperature: 9,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'AO',
@@ -71,7 +71,7 @@ export const countries: Country[] = [
     latitude: -11.202692,
     longitude: 17.873887,
     avgTemperature: 22,
-    equator: 'south',
+    equator: 'South',
   },
   {
     id: 'AG',
@@ -82,7 +82,7 @@ export const countries: Country[] = [
     latitude: 17.060816,
     longitude: -61.796428,
     avgTemperature: 27,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'AR',
@@ -93,7 +93,7 @@ export const countries: Country[] = [
     latitude: -38.416097,
     longitude: -63.616672,
     avgTemperature: 14,
-    equator: 'south',
+    equator: 'South',
   },
   {
     id: 'AM',
@@ -104,7 +104,7 @@ export const countries: Country[] = [
     latitude: 40.069099,
     longitude: 45.038189,
     avgTemperature: 10,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'AU',
@@ -115,7 +115,7 @@ export const countries: Country[] = [
     latitude: -25.274398,
     longitude: 133.775136,
     avgTemperature: 21,
-    equator: 'south',
+    equator: 'South',
   },
   {
     id: 'AT',
@@ -126,7 +126,7 @@ export const countries: Country[] = [
     latitude: 47.516231,
     longitude: 14.550072,
     avgTemperature: 8,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'AZ',
@@ -137,7 +137,7 @@ export const countries: Country[] = [
     latitude: 40.143105,
     longitude: 47.576927,
     avgTemperature: 14,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'BS',
@@ -148,7 +148,7 @@ export const countries: Country[] = [
     latitude: 25.03428,
     longitude: -77.39628,
     avgTemperature: 26,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'BH',
@@ -159,7 +159,7 @@ export const countries: Country[] = [
     latitude: 25.930414,
     longitude: 50.637772,
     avgTemperature: 28,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'BD',
@@ -170,7 +170,7 @@ export const countries: Country[] = [
     latitude: 23.684994,
     longitude: 90.356331,
     avgTemperature: 26,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'BB',
@@ -181,7 +181,7 @@ export const countries: Country[] = [
     latitude: 13.193887,
     longitude: -59.543198,
     avgTemperature: 27,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'BY',
@@ -192,7 +192,7 @@ export const countries: Country[] = [
     latitude: 53.709807,
     longitude: 27.953389,
     avgTemperature: 6,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'BE',
@@ -203,7 +203,7 @@ export const countries: Country[] = [
     latitude: 50.503887,
     longitude: 4.469936,
     avgTemperature: 10,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'BZ',
@@ -214,7 +214,7 @@ export const countries: Country[] = [
     latitude: 17.189877,
     longitude: -88.49765,
     avgTemperature: 26,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'BJ',
@@ -225,7 +225,7 @@ export const countries: Country[] = [
     latitude: 9.30769,
     longitude: 2.315834,
     avgTemperature: 27,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'BT',
@@ -236,7 +236,7 @@ export const countries: Country[] = [
     latitude: 27.514162,
     longitude: 90.433601,
     avgTemperature: 15,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'BO',
@@ -247,7 +247,7 @@ export const countries: Country[] = [
     latitude: -16.290154,
     longitude: -63.588653,
     avgTemperature: 18,
-    equator: 'south',
+    equator: 'South',
   },
   {
     id: 'BA',
@@ -258,7 +258,7 @@ export const countries: Country[] = [
     latitude: 43.915886,
     longitude: 17.679076,
     avgTemperature: 10,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'BW',
@@ -269,7 +269,7 @@ export const countries: Country[] = [
     latitude: -22.328474,
     longitude: 24.684866,
     avgTemperature: 22,
-    equator: 'south',
+    equator: 'South',
   },
   {
     id: 'BR',
@@ -280,7 +280,7 @@ export const countries: Country[] = [
     latitude: -14.235004,
     longitude: -51.92528,
     avgTemperature: 25,
-    equator: 'south',
+    equator: 'South',
   },
   {
     id: 'BN',
@@ -291,7 +291,7 @@ export const countries: Country[] = [
     latitude: 4.535277,
     longitude: 114.727669,
     avgTemperature: 27,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'BG',
@@ -302,7 +302,7 @@ export const countries: Country[] = [
     latitude: 42.733883,
     longitude: 25.48583,
     avgTemperature: 10,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'BF',
@@ -313,7 +313,7 @@ export const countries: Country[] = [
     latitude: 12.238333,
     longitude: -1.561593,
     avgTemperature: 28,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'BI',
@@ -324,7 +324,7 @@ export const countries: Country[] = [
     latitude: -3.373056,
     longitude: 29.918886,
     avgTemperature: 21,
-    equator: 'south',
+    equator: 'South',
   },
   {
     id: 'CV',
@@ -335,7 +335,7 @@ export const countries: Country[] = [
     latitude: 16.002082,
     longitude: -24.013197,
     avgTemperature: 24,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'KH',
@@ -346,7 +346,7 @@ export const countries: Country[] = [
     latitude: 12.565679,
     longitude: 104.990963,
     avgTemperature: 27,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'CM',
@@ -357,7 +357,7 @@ export const countries: Country[] = [
     latitude: 7.369722,
     longitude: 12.354722,
     avgTemperature: 24,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'CA',
@@ -368,7 +368,7 @@ export const countries: Country[] = [
     latitude: 56.130366,
     longitude: -106.346771,
     avgTemperature: -1,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'CF',
@@ -379,7 +379,7 @@ export const countries: Country[] = [
     latitude: 6.611111,
     longitude: 20.939444,
     avgTemperature: 26,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'TD',
@@ -390,7 +390,7 @@ export const countries: Country[] = [
     latitude: 15.454166,
     longitude: 18.732207,
     avgTemperature: 28,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'CL',
@@ -401,7 +401,7 @@ export const countries: Country[] = [
     latitude: -35.675147,
     longitude: -71.542969,
     avgTemperature: 12,
-    equator: 'south',
+    equator: 'South',
   },
   {
     id: 'CN',
@@ -412,7 +412,7 @@ export const countries: Country[] = [
     latitude: 35.86166,
     longitude: 104.195397,
     avgTemperature: 11,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'CO',
@@ -423,7 +423,7 @@ export const countries: Country[] = [
     latitude: 4.570868,
     longitude: -74.297333,
     avgTemperature: 24,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'KM',
@@ -434,7 +434,7 @@ export const countries: Country[] = [
     latitude: -11.875001,
     longitude: 43.872219,
     avgTemperature: 25,
-    equator: 'south',
+    equator: 'South',
   },
   {
     id: 'CG',
@@ -445,7 +445,7 @@ export const countries: Country[] = [
     latitude: -0.228021,
     longitude: 15.827659,
     avgTemperature: 25,
-    equator: 'south',
+    equator: 'South',
   },
   {
     id: 'CD',
@@ -456,7 +456,7 @@ export const countries: Country[] = [
     latitude: -4.038333,
     longitude: 21.758664,
     avgTemperature: 25,
-    equator: 'south',
+    equator: 'South',
   },
   {
     id: 'CR',
@@ -467,7 +467,7 @@ export const countries: Country[] = [
     latitude: 9.748917,
     longitude: -83.753428,
     avgTemperature: 25,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'HR',
@@ -478,7 +478,7 @@ export const countries: Country[] = [
     latitude: 45.1,
     longitude: 15.2,
     avgTemperature: 12,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'CU',
@@ -489,7 +489,7 @@ export const countries: Country[] = [
     latitude: 21.521757,
     longitude: -77.781167,
     avgTemperature: 25,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'CY',
@@ -500,7 +500,7 @@ export const countries: Country[] = [
     latitude: 35.126413,
     longitude: 33.429859,
     avgTemperature: 20,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'CZ',
@@ -511,7 +511,7 @@ export const countries: Country[] = [
     latitude: 49.817492,
     longitude: 15.472962,
     avgTemperature: 8,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'DK',
@@ -522,7 +522,7 @@ export const countries: Country[] = [
     latitude: 56.26392,
     longitude: 9.501785,
     avgTemperature: 8,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'DJ',
@@ -533,7 +533,7 @@ export const countries: Country[] = [
     latitude: 11.825138,
     longitude: 42.590275,
     avgTemperature: 28,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'DM',
@@ -544,7 +544,7 @@ export const countries: Country[] = [
     latitude: 15.414999,
     longitude: -61.370976,
     avgTemperature: 26,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'DO',
@@ -555,7 +555,7 @@ export const countries: Country[] = [
     latitude: 18.735693,
     longitude: -70.162651,
     avgTemperature: 26,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'EC',
@@ -566,7 +566,7 @@ export const countries: Country[] = [
     latitude: -1.831239,
     longitude: -78.183406,
     avgTemperature: 22,
-    equator: 'south',
+    equator: 'South',
   },
   {
     id: 'EG',
@@ -577,7 +577,7 @@ export const countries: Country[] = [
     latitude: 26.820553,
     longitude: 30.802498,
     avgTemperature: 22,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'SV',
@@ -588,7 +588,7 @@ export const countries: Country[] = [
     latitude: 13.794185,
     longitude: -88.89653,
     avgTemperature: 25,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'GQ',
@@ -599,7 +599,7 @@ export const countries: Country[] = [
     latitude: 1.650801,
     longitude: 10.267895,
     avgTemperature: 25,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'ER',
@@ -610,7 +610,7 @@ export const countries: Country[] = [
     latitude: 15.179384,
     longitude: 39.782334,
     avgTemperature: 25,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'EE',
@@ -621,7 +621,7 @@ export const countries: Country[] = [
     latitude: 58.595272,
     longitude: 25.013607,
     avgTemperature: 5,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'SZ',
@@ -632,7 +632,7 @@ export const countries: Country[] = [
     latitude: -26.522503,
     longitude: 31.465866,
     avgTemperature: 20,
-    equator: 'south',
+    equator: 'South',
   },
   {
     id: 'ET',
@@ -643,7 +643,7 @@ export const countries: Country[] = [
     latitude: 9.145,
     longitude: 40.489673,
     avgTemperature: 22,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'FJ',
@@ -654,7 +654,7 @@ export const countries: Country[] = [
     latitude: -16.578193,
     longitude: 179.414413,
     avgTemperature: 25,
-    equator: 'south',
+    equator: 'South',
   },
   {
     id: 'FI',
@@ -665,7 +665,7 @@ export const countries: Country[] = [
     latitude: 61.92411,
     longitude: 25.748151,
     avgTemperature: 2,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'FR',
@@ -676,7 +676,7 @@ export const countries: Country[] = [
     latitude: 46.227638,
     longitude: 2.213749,
     avgTemperature: 11,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'GA',
@@ -687,7 +687,7 @@ export const countries: Country[] = [
     latitude: -0.803689,
     longitude: 11.609444,
     avgTemperature: 25,
-    equator: 'south',
+    equator: 'South',
   },
   {
     id: 'GM',
@@ -698,7 +698,7 @@ export const countries: Country[] = [
     latitude: 13.443182,
     longitude: -15.310139,
     avgTemperature: 27,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'GE',
@@ -709,7 +709,7 @@ export const countries: Country[] = [
     latitude: 42.315407,
     longitude: 43.356892,
     avgTemperature: 12,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'DE',
@@ -720,7 +720,7 @@ export const countries: Country[] = [
     latitude: 51.165691,
     longitude: 10.451526,
     avgTemperature: 9,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'GH',
@@ -731,7 +731,7 @@ export const countries: Country[] = [
     latitude: 7.946527,
     longitude: -1.023194,
     avgTemperature: 27,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'GR',
@@ -742,7 +742,7 @@ export const countries: Country[] = [
     latitude: 39.074208,
     longitude: 21.824312,
     avgTemperature: 16,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'GD',
@@ -753,7 +753,7 @@ export const countries: Country[] = [
     latitude: 12.262776,
     longitude: -61.604171,
     avgTemperature: 26,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'GT',
@@ -764,7 +764,7 @@ export const countries: Country[] = [
     latitude: 15.783471,
     longitude: -90.230759,
     avgTemperature: 22,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'GN',
@@ -775,7 +775,7 @@ export const countries: Country[] = [
     latitude: 9.945587,
     longitude: -9.696645,
     avgTemperature: 26,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'GW',
@@ -786,7 +786,7 @@ export const countries: Country[] = [
     latitude: 11.803749,
     longitude: -15.180413,
     avgTemperature: 26,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'GY',
@@ -797,7 +797,7 @@ export const countries: Country[] = [
     latitude: 4.860416,
     longitude: -58.93018,
     avgTemperature: 26,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'HT',
@@ -808,7 +808,7 @@ export const countries: Country[] = [
     latitude: 18.971187,
     longitude: -72.285215,
     avgTemperature: 26,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'HN',
@@ -819,7 +819,7 @@ export const countries: Country[] = [
     latitude: 15.199999,
     longitude: -86.241905,
     avgTemperature: 25,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'HU',
@@ -830,7 +830,7 @@ export const countries: Country[] = [
     latitude: 47.162494,
     longitude: 19.503304,
     avgTemperature: 10,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'IS',
@@ -841,7 +841,7 @@ export const countries: Country[] = [
     latitude: 64.963051,
     longitude: -19.020835,
     avgTemperature: 2,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'IN',
@@ -852,7 +852,7 @@ export const countries: Country[] = [
     latitude: 20.593684,
     longitude: 78.96288,
     avgTemperature: 25,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'ID',
@@ -863,7 +863,7 @@ export const countries: Country[] = [
     latitude: -0.789275,
     longitude: 113.921327,
     avgTemperature: 26,
-    equator: 'south',
+    equator: 'South',
   },
   {
     id: 'IR',
@@ -874,7 +874,7 @@ export const countries: Country[] = [
     latitude: 32.427908,
     longitude: 53.688046,
     avgTemperature: 17,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'IQ',
@@ -885,7 +885,7 @@ export const countries: Country[] = [
     latitude: 33.223191,
     longitude: 43.679291,
     avgTemperature: 22,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'IE',
@@ -896,7 +896,7 @@ export const countries: Country[] = [
     latitude: 53.41291,
     longitude: -8.24389,
     avgTemperature: 9,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'IL',
@@ -907,7 +907,7 @@ export const countries: Country[] = [
     latitude: 31.046051,
     longitude: 34.851612,
     avgTemperature: 20,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'IT',
@@ -918,7 +918,7 @@ export const countries: Country[] = [
     latitude: 41.87194,
     longitude: 12.56738,
     avgTemperature: 13,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'CI',
@@ -929,7 +929,7 @@ export const countries: Country[] = [
     latitude: 7.539989,
     longitude: -5.54708,
     avgTemperature: 26,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'JM',
@@ -940,7 +940,7 @@ export const countries: Country[] = [
     latitude: 18.109581,
     longitude: -77.297508,
     avgTemperature: 27,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'JP',
@@ -951,7 +951,7 @@ export const countries: Country[] = [
     latitude: 36.204824,
     longitude: 138.252924,
     avgTemperature: 12,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'JO',
@@ -962,7 +962,7 @@ export const countries: Country[] = [
     latitude: 30.585164,
     longitude: 36.238414,
     avgTemperature: 18,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'KZ',
@@ -973,7 +973,7 @@ export const countries: Country[] = [
     latitude: 48.019573,
     longitude: 66.923684,
     avgTemperature: 3,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'KE',
@@ -984,7 +984,7 @@ export const countries: Country[] = [
     latitude: -0.023559,
     longitude: 37.906193,
     avgTemperature: 22,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'KI',
@@ -995,7 +995,7 @@ export const countries: Country[] = [
     latitude: -3.370417,
     longitude: -168.734039,
     avgTemperature: 28,
-    equator: 'south',
+    equator: 'South',
   },
   {
     id: 'KP',
@@ -1006,7 +1006,7 @@ export const countries: Country[] = [
     latitude: 40.339852,
     longitude: 127.510093,
     avgTemperature: 8,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'KR',
@@ -1017,7 +1017,7 @@ export const countries: Country[] = [
     latitude: 35.907757,
     longitude: 127.766922,
     avgTemperature: 12,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'KW',
@@ -1028,7 +1028,7 @@ export const countries: Country[] = [
     latitude: 29.31166,
     longitude: 47.481766,
     avgTemperature: 26,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'KG',
@@ -1039,7 +1039,7 @@ export const countries: Country[] = [
     latitude: 41.20438,
     longitude: 74.766098,
     avgTemperature: 5,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'LA',
@@ -1050,7 +1050,7 @@ export const countries: Country[] = [
     latitude: 19.85627,
     longitude: 102.495496,
     avgTemperature: 25,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'LV',
@@ -1061,7 +1061,7 @@ export const countries: Country[] = [
     latitude: 56.879635,
     longitude: 24.603189,
     avgTemperature: 6,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'LB',
@@ -1072,7 +1072,7 @@ export const countries: Country[] = [
     latitude: 33.854721,
     longitude: 35.862285,
     avgTemperature: 18,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'LS',
@@ -1083,7 +1083,7 @@ export const countries: Country[] = [
     latitude: -29.609988,
     longitude: 28.233608,
     avgTemperature: 15,
-    equator: 'south',
+    equator: 'South',
   },
   {
     id: 'LR',
@@ -1094,7 +1094,7 @@ export const countries: Country[] = [
     latitude: 6.428055,
     longitude: -9.429499,
     avgTemperature: 25,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'LY',
@@ -1105,7 +1105,7 @@ export const countries: Country[] = [
     latitude: 26.3351,
     longitude: 17.228331,
     avgTemperature: 22,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'LI',
@@ -1116,7 +1116,7 @@ export const countries: Country[] = [
     latitude: 47.166,
     longitude: 9.555373,
     avgTemperature: 7,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'LT',
@@ -1127,7 +1127,7 @@ export const countries: Country[] = [
     latitude: 55.169438,
     longitude: 23.881275,
     avgTemperature: 6,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'LU',
@@ -1138,7 +1138,7 @@ export const countries: Country[] = [
     latitude: 49.815273,
     longitude: 6.129583,
     avgTemperature: 9,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'MG',
@@ -1149,7 +1149,7 @@ export const countries: Country[] = [
     latitude: -18.766947,
     longitude: 46.869107,
     avgTemperature: 22,
-    equator: 'south',
+    equator: 'South',
   },
   {
     id: 'MW',
@@ -1160,7 +1160,7 @@ export const countries: Country[] = [
     latitude: -13.254308,
     longitude: 34.301525,
     avgTemperature: 21,
-    equator: 'south',
+    equator: 'South',
   },
   {
     id: 'MY',
@@ -1171,7 +1171,7 @@ export const countries: Country[] = [
     latitude: 4.210484,
     longitude: 101.975766,
     avgTemperature: 27,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'MV',
@@ -1182,7 +1182,7 @@ export const countries: Country[] = [
     latitude: 3.202778,
     longitude: 73.22068,
     avgTemperature: 28,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'ML',
@@ -1193,7 +1193,7 @@ export const countries: Country[] = [
     latitude: 17.570692,
     longitude: -3.996166,
     avgTemperature: 28,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'MT',
@@ -1204,7 +1204,7 @@ export const countries: Country[] = [
     latitude: 35.937496,
     longitude: 14.375416,
     avgTemperature: 19,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'MH',
@@ -1215,7 +1215,7 @@ export const countries: Country[] = [
     latitude: 7.131474,
     longitude: 171.184478,
     avgTemperature: 28,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'MR',
@@ -1226,7 +1226,7 @@ export const countries: Country[] = [
     latitude: 21.00789,
     longitude: -10.940835,
     avgTemperature: 28,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'MU',
@@ -1237,7 +1237,7 @@ export const countries: Country[] = [
     latitude: -20.348404,
     longitude: 57.552152,
     avgTemperature: 23,
-    equator: 'south',
+    equator: 'South',
   },
   {
     id: 'MX',
@@ -1248,7 +1248,7 @@ export const countries: Country[] = [
     latitude: 23.634501,
     longitude: -102.552784,
     avgTemperature: 21,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'FM',
@@ -1259,7 +1259,7 @@ export const countries: Country[] = [
     latitude: 7.425554,
     longitude: 150.550812,
     avgTemperature: 27,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'MD',
@@ -1270,7 +1270,7 @@ export const countries: Country[] = [
     latitude: 47.411631,
     longitude: 28.369885,
     avgTemperature: 9,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'MC',
@@ -1281,7 +1281,7 @@ export const countries: Country[] = [
     latitude: 43.750298,
     longitude: 7.412841,
     avgTemperature: 16,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'MN',
@@ -1292,7 +1292,7 @@ export const countries: Country[] = [
     latitude: 46.862496,
     longitude: 103.846656,
     avgTemperature: -1,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'ME',
@@ -1303,7 +1303,7 @@ export const countries: Country[] = [
     latitude: 42.708678,
     longitude: 19.37439,
     avgTemperature: 12,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'MA',
@@ -1314,7 +1314,7 @@ export const countries: Country[] = [
     latitude: 31.791702,
     longitude: -7.09262,
     avgTemperature: 19,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'MZ',
@@ -1325,7 +1325,7 @@ export const countries: Country[] = [
     latitude: -18.665695,
     longitude: 35.529562,
     avgTemperature: 23,
-    equator: 'south',
+    equator: 'South',
   },
   {
     id: 'MM',
@@ -1336,7 +1336,7 @@ export const countries: Country[] = [
     latitude: 21.913965,
     longitude: 95.956223,
     avgTemperature: 27,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'NA',
@@ -1347,7 +1347,7 @@ export const countries: Country[] = [
     latitude: -22.95764,
     longitude: 18.49041,
     avgTemperature: 20,
-    equator: 'south',
+    equator: 'South',
   },
   {
     id: 'NR',
@@ -1358,7 +1358,7 @@ export const countries: Country[] = [
     latitude: -0.522778,
     longitude: 166.931503,
     avgTemperature: 28,
-    equator: 'south',
+    equator: 'South',
   },
   {
     id: 'NP',
@@ -1369,7 +1369,7 @@ export const countries: Country[] = [
     latitude: 28.394857,
     longitude: 84.124008,
     avgTemperature: 15,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'NL',
@@ -1380,7 +1380,7 @@ export const countries: Country[] = [
     latitude: 52.132633,
     longitude: 5.291266,
     avgTemperature: 10,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'NZ',
@@ -1391,7 +1391,7 @@ export const countries: Country[] = [
     latitude: -40.900557,
     longitude: 174.885971,
     avgTemperature: 12,
-    equator: 'south',
+    equator: 'South',
   },
   {
     id: 'NI',
@@ -1402,7 +1402,7 @@ export const countries: Country[] = [
     latitude: 12.865416,
     longitude: -85.207229,
     avgTemperature: 26,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'NE',
@@ -1413,7 +1413,7 @@ export const countries: Country[] = [
     latitude: 17.607789,
     longitude: 8.081666,
     avgTemperature: 28,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'NG',
@@ -1424,7 +1424,7 @@ export const countries: Country[] = [
     latitude: 9.081999,
     longitude: 8.675277,
     avgTemperature: 27,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'MK',
@@ -1435,7 +1435,7 @@ export const countries: Country[] = [
     latitude: 41.608635,
     longitude: 21.745275,
     avgTemperature: 11,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'NO',
@@ -1446,7 +1446,7 @@ export const countries: Country[] = [
     latitude: 60.472024,
     longitude: 8.468946,
     avgTemperature: 3,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'OM',
@@ -1457,7 +1457,7 @@ export const countries: Country[] = [
     latitude: 21.512583,
     longitude: 55.923255,
     avgTemperature: 28,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'PK',
@@ -1468,7 +1468,7 @@ export const countries: Country[] = [
     latitude: 30.375321,
     longitude: 69.345116,
     avgTemperature: 22,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'PW',
@@ -1479,7 +1479,7 @@ export const countries: Country[] = [
     latitude: 7.51498,
     longitude: 134.58252,
     avgTemperature: 28,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'PA',
@@ -1490,7 +1490,7 @@ export const countries: Country[] = [
     latitude: 8.537981,
     longitude: -80.782127,
     avgTemperature: 27,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'PG',
@@ -1501,7 +1501,7 @@ export const countries: Country[] = [
     latitude: -6.314993,
     longitude: 143.95555,
     avgTemperature: 26,
-    equator: 'south',
+    equator: 'South',
   },
   {
     id: 'PY',
@@ -1512,7 +1512,7 @@ export const countries: Country[] = [
     latitude: -23.442503,
     longitude: -58.443832,
     avgTemperature: 23,
-    equator: 'south',
+    equator: 'South',
   },
   {
     id: 'PE',
@@ -1523,7 +1523,7 @@ export const countries: Country[] = [
     latitude: -9.189967,
     longitude: -75.015152,
     avgTemperature: 19,
-    equator: 'south',
+    equator: 'South',
   },
   {
     id: 'PH',
@@ -1534,7 +1534,7 @@ export const countries: Country[] = [
     latitude: 12.879721,
     longitude: 121.774017,
     avgTemperature: 27,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'PL',
@@ -1545,7 +1545,7 @@ export const countries: Country[] = [
     latitude: 51.919438,
     longitude: 19.145136,
     avgTemperature: 8,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'PT',
@@ -1556,7 +1556,7 @@ export const countries: Country[] = [
     latitude: 39.399872,
     longitude: -8.224454,
     avgTemperature: 15,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'QA',
@@ -1567,7 +1567,7 @@ export const countries: Country[] = [
     latitude: 25.354826,
     longitude: 51.183884,
     avgTemperature: 28,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'RO',
@@ -1578,7 +1578,7 @@ export const countries: Country[] = [
     latitude: 45.943161,
     longitude: 24.96676,
     avgTemperature: 9,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'RU',
@@ -1589,7 +1589,7 @@ export const countries: Country[] = [
     latitude: 61.52401,
     longitude: 105.318756,
     avgTemperature: -5,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'RW',
@@ -1600,7 +1600,7 @@ export const countries: Country[] = [
     latitude: -1.940278,
     longitude: 29.873888,
     avgTemperature: 20,
-    equator: 'south',
+    equator: 'South',
   },
   {
     id: 'KN',
@@ -1611,7 +1611,7 @@ export const countries: Country[] = [
     latitude: 17.357822,
     longitude: -62.782998,
     avgTemperature: 26,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'LC',
@@ -1622,7 +1622,7 @@ export const countries: Country[] = [
     latitude: 13.909444,
     longitude: -60.978893,
     avgTemperature: 26,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'VC',
@@ -1633,7 +1633,7 @@ export const countries: Country[] = [
     latitude: 12.984305,
     longitude: -61.287228,
     avgTemperature: 26,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'WS',
@@ -1644,7 +1644,7 @@ export const countries: Country[] = [
     latitude: -13.759029,
     longitude: -172.104629,
     avgTemperature: 26,
-    equator: 'south',
+    equator: 'South',
   },
   {
     id: 'SM',
@@ -1655,7 +1655,7 @@ export const countries: Country[] = [
     latitude: 43.94236,
     longitude: 12.457777,
     avgTemperature: 13,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'ST',
@@ -1666,7 +1666,7 @@ export const countries: Country[] = [
     latitude: 0.18636,
     longitude: 6.613081,
     avgTemperature: 25,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'SA',
@@ -1677,7 +1677,7 @@ export const countries: Country[] = [
     latitude: 23.885942,
     longitude: 45.079162,
     avgTemperature: 26,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'SN',
@@ -1688,7 +1688,7 @@ export const countries: Country[] = [
     latitude: 14.497401,
     longitude: -14.452362,
     avgTemperature: 27,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'RS',
@@ -1699,7 +1699,7 @@ export const countries: Country[] = [
     latitude: 44.016521,
     longitude: 21.005859,
     avgTemperature: 11,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'SC',
@@ -1710,7 +1710,7 @@ export const countries: Country[] = [
     latitude: -4.679574,
     longitude: 55.491977,
     avgTemperature: 27,
-    equator: 'south',
+    equator: 'South',
   },
   {
     id: 'SL',
@@ -1721,7 +1721,7 @@ export const countries: Country[] = [
     latitude: 8.460555,
     longitude: -11.779889,
     avgTemperature: 26,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'SG',
@@ -1732,7 +1732,7 @@ export const countries: Country[] = [
     latitude: 1.352083,
     longitude: 103.819836,
     avgTemperature: 28,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'SK',
@@ -1743,7 +1743,7 @@ export const countries: Country[] = [
     latitude: 48.669026,
     longitude: 19.699024,
     avgTemperature: 8,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'SI',
@@ -1754,7 +1754,7 @@ export const countries: Country[] = [
     latitude: 46.151241,
     longitude: 14.995463,
     avgTemperature: 9,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'SB',
@@ -1765,7 +1765,7 @@ export const countries: Country[] = [
     latitude: -9.64571,
     longitude: 160.156194,
     avgTemperature: 26,
-    equator: 'south',
+    equator: 'South',
   },
   {
     id: 'SO',
@@ -1776,7 +1776,7 @@ export const countries: Country[] = [
     latitude: 5.152149,
     longitude: 46.199616,
     avgTemperature: 28,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'ZA',
@@ -1787,7 +1787,7 @@ export const countries: Country[] = [
     latitude: -30.559482,
     longitude: 22.937506,
     avgTemperature: 18,
-    equator: 'south',
+    equator: 'South',
   },
   {
     id: 'SS',
@@ -1798,7 +1798,7 @@ export const countries: Country[] = [
     latitude: 6.876991,
     longitude: 31.306978,
     avgTemperature: 27,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'ES',
@@ -1809,7 +1809,7 @@ export const countries: Country[] = [
     latitude: 40.463667,
     longitude: -3.74922,
     avgTemperature: 14,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'LK',
@@ -1820,7 +1820,7 @@ export const countries: Country[] = [
     latitude: 7.873054,
     longitude: 80.771797,
     avgTemperature: 27,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'SD',
@@ -1831,7 +1831,7 @@ export const countries: Country[] = [
     latitude: 12.862807,
     longitude: 30.217636,
     avgTemperature: 28,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'SR',
@@ -1842,7 +1842,7 @@ export const countries: Country[] = [
     latitude: 3.919305,
     longitude: -56.027783,
     avgTemperature: 26,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'SE',
@@ -1853,7 +1853,7 @@ export const countries: Country[] = [
     latitude: 60.128161,
     longitude: 18.643501,
     avgTemperature: 2,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'CH',
@@ -1864,7 +1864,7 @@ export const countries: Country[] = [
     latitude: 46.818188,
     longitude: 8.227512,
     avgTemperature: 8,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'SY',
@@ -1875,7 +1875,7 @@ export const countries: Country[] = [
     latitude: 34.802075,
     longitude: 38.996815,
     avgTemperature: 18,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'TJ',
@@ -1886,7 +1886,7 @@ export const countries: Country[] = [
     latitude: 38.861034,
     longitude: 71.276093,
     avgTemperature: 8,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'TZ',
@@ -1897,7 +1897,7 @@ export const countries: Country[] = [
     latitude: -6.369028,
     longitude: 34.888822,
     avgTemperature: 23,
-    equator: 'south',
+    equator: 'South',
   },
   {
     id: 'TH',
@@ -1908,7 +1908,7 @@ export const countries: Country[] = [
     latitude: 15.870032,
     longitude: 100.992541,
     avgTemperature: 28,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'TL',
@@ -1919,7 +1919,7 @@ export const countries: Country[] = [
     latitude: -8.874217,
     longitude: 125.727539,
     avgTemperature: 26,
-    equator: 'south',
+    equator: 'South',
   },
   {
     id: 'TG',
@@ -1930,7 +1930,7 @@ export const countries: Country[] = [
     latitude: 8.619543,
     longitude: 0.824782,
     avgTemperature: 27,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'TO',
@@ -1941,7 +1941,7 @@ export const countries: Country[] = [
     latitude: -21.178986,
     longitude: -175.198242,
     avgTemperature: 25,
-    equator: 'south',
+    equator: 'South',
   },
   {
     id: 'TT',
@@ -1952,7 +1952,7 @@ export const countries: Country[] = [
     latitude: 10.691803,
     longitude: -61.222503,
     avgTemperature: 26,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'TN',
@@ -1963,7 +1963,7 @@ export const countries: Country[] = [
     latitude: 33.886917,
     longitude: 9.537499,
     avgTemperature: 19,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'TR',
@@ -1974,7 +1974,7 @@ export const countries: Country[] = [
     latitude: 38.963745,
     longitude: 35.243322,
     avgTemperature: 13,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'TM',
@@ -1985,7 +1985,7 @@ export const countries: Country[] = [
     latitude: 38.969719,
     longitude: 59.556278,
     avgTemperature: 17,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'TV',
@@ -1996,7 +1996,7 @@ export const countries: Country[] = [
     latitude: -7.109535,
     longitude: 177.64933,
     avgTemperature: 28,
-    equator: 'south',
+    equator: 'South',
   },
   {
     id: 'UG',
@@ -2007,7 +2007,7 @@ export const countries: Country[] = [
     latitude: 1.373333,
     longitude: 32.290275,
     avgTemperature: 22,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'UA',
@@ -2018,7 +2018,7 @@ export const countries: Country[] = [
     latitude: 48.379433,
     longitude: 31.16558,
     avgTemperature: 7,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'AE',
@@ -2029,7 +2029,7 @@ export const countries: Country[] = [
     latitude: 23.424076,
     longitude: 53.847818,
     avgTemperature: 28,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'GB',
@@ -2040,7 +2040,7 @@ export const countries: Country[] = [
     latitude: 55.378051,
     longitude: -3.435973,
     avgTemperature: 9,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'US',
@@ -2051,7 +2051,7 @@ export const countries: Country[] = [
     latitude: 37.09024,
     longitude: -95.712891,
     avgTemperature: 8,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'UY',
@@ -2062,7 +2062,7 @@ export const countries: Country[] = [
     latitude: -32.522779,
     longitude: -55.765835,
     avgTemperature: 17,
-    equator: 'south',
+    equator: 'South',
   },
   {
     id: 'UZ',
@@ -2073,7 +2073,7 @@ export const countries: Country[] = [
     latitude: 41.377491,
     longitude: 64.585262,
     avgTemperature: 13,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'VU',
@@ -2084,7 +2084,7 @@ export const countries: Country[] = [
     latitude: -15.376706,
     longitude: 166.959158,
     avgTemperature: 25,
-    equator: 'south',
+    equator: 'South',
   },
   {
     id: 'VA',
@@ -2095,7 +2095,7 @@ export const countries: Country[] = [
     latitude: 41.902916,
     longitude: 12.453389,
     avgTemperature: 15,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'VE',
@@ -2106,7 +2106,7 @@ export const countries: Country[] = [
     latitude: 6.42375,
     longitude: -66.58973,
     avgTemperature: 26,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'VN',
@@ -2117,7 +2117,7 @@ export const countries: Country[] = [
     latitude: 14.058324,
     longitude: 108.277199,
     avgTemperature: 24,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'YE',
@@ -2128,7 +2128,7 @@ export const countries: Country[] = [
     latitude: 15.552727,
     longitude: 48.516388,
     avgTemperature: 25,
-    equator: 'north',
+    equator: 'North',
   },
   {
     id: 'ZM',
@@ -2139,7 +2139,7 @@ export const countries: Country[] = [
     latitude: -13.133897,
     longitude: 27.849332,
     avgTemperature: 21,
-    equator: 'south',
+    equator: 'South',
   },
   {
     id: 'ZW',
@@ -2150,7 +2150,7 @@ export const countries: Country[] = [
     latitude: -19.015438,
     longitude: 29.154857,
     avgTemperature: 21,
-    equator: 'south',
+    equator: 'South',
   },
   {
     id: 'PS',
@@ -2161,6 +2161,6 @@ export const countries: Country[] = [
     latitude: 31.9522,
     longitude: 35.2332,
     avgTemperature: 20,
-    equator: 'north',
+    equator: 'North',
   },
 ];

@@ -20,7 +20,7 @@ import { WinDialogComponent } from '../win-dialog/win-dialog.component';
 })
 export class DashboardComponent implements OnChanges {
   /** The country selected by the user */
-  @Input({ required: true }) selectedCountry!: Country;
+  @Input() selectedCountry?: Country;
 
   /** The random country to guess */
   @Input({ required: true }) randomCountry!: Country;
@@ -36,8 +36,6 @@ export class DashboardComponent implements OnChanges {
     { key: 'name', arrow: false },
     { key: 'equator', arrow: false },
     { key: 'continent', arrow: false },
-    { key: 'avgTemperature', arrow: true },
-    { key: 'population', arrow: true },
   ];
 
   /** Whether to show the win modal */
@@ -77,35 +75,35 @@ export class DashboardComponent implements OnChanges {
    * Gets the CSS class for a property based on comparison
    */
   getClass(key: keyof Country): string {
+    if (!this.selectedCountry) {
+      // This case should ideally not be hit due to template guards,
+      // but we add it for type safety.
+      return 'bg-gray-300'; // Default class if undefined
+    }
     return this.selectedCountry[key] === this.randomCountry[key]
-      ? 'bg-green-400'
-      : 'bg-red-100 border-red-500';
-  }
-
-  /**
-   * Gets the arrow direction for numeric comparisons
-   */
-  getArrow(key: keyof Country): string {
-    const selectedValue = this.selectedCountry[key] as number;
-    const randomValue = this.randomCountry[key] as number;
-    const diff = selectedValue - randomValue;
-    return diff > 0 ? '↓' : diff < 0 ? '↑' : '';
+      ? 'bg-green-100'
+      : 'bg-red-100';
   }
 
   /**
    * Calculates the direction from selected country to random country
    */
   getDirection(): string {
+    if (!this.selectedCountry) {
+      // This case should ideally not be hit due to template guards,
+      // but we add it for type safety.
+      return ''; // Default direction if undefined
+    }
     const latDiff = this.randomCountry.latitude - this.selectedCountry.latitude;
     const lonDiff =
       this.randomCountry.longitude - this.selectedCountry.longitude;
     const directions: string[] = [];
 
-    if (latDiff > 3) directions.push('north');
-    if (latDiff < -3) directions.push('south');
-    if (lonDiff > 3) directions.push('east');
-    if (lonDiff < -3) directions.push('west');
+    if (latDiff > 3) directions.push('North');
+    if (latDiff < -3) directions.push('South');
+    if (lonDiff > 3) directions.push('East');
+    if (lonDiff < -3) directions.push('West');
 
-    return directions.join(' ') || 'same location';
+    return directions.join(' ') || 'Right on the spot';
   }
 }

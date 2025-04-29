@@ -8,20 +8,23 @@ import { Component, Input } from '@angular/core';
   standalone: true,
   imports: [CommonModule],
   template: `
-    <div class="mt-8 p-4 border rounded-lg">
-      <h2 class="text-xl font-bold mb-4">Game History</h2>
-      <div *ngFor="let entry of historyLog" class="mb-4 p-2 border-b">
-        <div class="flex justify-between">
-          <span>Your guess: {{ entry.selected.name }}</span>
-          <span
-            class="font-bold"
-            [ngClass]="entry.isCorrect ? 'text-green-600' : 'text-red-600'">
-            {{ entry.isCorrect ? '✓' : '✗' }}
-          </span>
-        </div>
-        <div class="text-sm text-gray-600">
-          Target: {{ entry.random.name }} • Direction: {{ entry.direction }}
-        </div>
+    <div class="mt-4 p-2">
+      <h2
+        class="text-2xl font-extrabold mb-4 text-gray-800 tracking-wide border-b pb-2 ">
+        Hints
+      </h2>
+      <div class="max-h-64 overflow-y-auto pr-2">
+        @if (historyLog) {
+          <div *ngFor="let entry of historyLog" class="mb-2">
+            <div
+              class="bg-gray-100 rounded-lg px-3 py-2 shadow-sm text-base font-medium text-gray-700">
+              <span class="font-semibold text-gray-700">{{
+                entry.direction
+              }}</span>
+              of <span class="font-semibold">{{ entry.selected.name }}</span>
+            </div>
+          </div>
+        }
       </div>
     </div>
   `,

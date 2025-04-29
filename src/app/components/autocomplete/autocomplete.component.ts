@@ -16,7 +16,7 @@ import { Country } from '../../data/data';
         (focus)="showSuggestions = true"
         (blur)="onBlur()"
         (keydown.enter)="onEnter()"
-        class="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+        class="w-full  rounded-lg py-2"
         placeholder="Enter country name..." />
 
       <!-- Suggestions Dropdown -->
@@ -39,13 +39,6 @@ import { Country } from '../../data/data';
       </div>
     </div>
   `,
-  styles: [
-    `
-      .max-h-60 {
-        max-height: 15rem;
-      }
-    `,
-  ],
 })
 export class AutocompleteComponent {
   @Input() countries: Country[] = [];

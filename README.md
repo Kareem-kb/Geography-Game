@@ -148,3 +148,33 @@ src/
    - Proper change detection handling
 
 ---
+
+## 🗺️ Google Maps Integration
+
+This project integrates Google Maps to provide a visual representation of the world and potentially enhance gameplay features in the future.
+
+### Setup
+
+1.  **Get a Google Maps API Key**: You need an API key from the Google Cloud Platform. Enable the "Maps JavaScript API" for your project.
+2.  **Configure Environment Files**: Add your API key and optionally a Map ID to the environment files:
+
+    - `src/environments/environment.ts` (for production)
+    - `src/environments/environment.development.ts` (for development)
+
+    Update the `googleMaps` object in these files:
+
+    ```typescript
+    export const environment = {
+      production: false, // or true for production
+      googleMaps: {
+        apiKey: 'YOUR_GOOGLE_MAPS_API_KEY',
+        mapId: 'YOUR_OPTIONAL_MAP_ID',
+      },
+    };
+    ```
+
+### Usage
+
+The map is currently displayed in the main application component (`AppComponent`) using the `<google-map>` component from `@angular/google-maps`. The API script is loaded dynamically when the component initializes.
+
+---

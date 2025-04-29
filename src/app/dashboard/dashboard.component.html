@@ -1,0 +1,41 @@
+<section>
+  <div>
+    <h2 class="text-xl font-semibold text-gray-800">Country Comparison</h2>
+
+    <ul class="flex justify-around p-0 list-none gap-2">
+      <ng-container *ngFor="let prop of countryProps">
+        <li
+          class="w-full flex flex-col h-fit rounded-md p-2"
+          [ngClass]="
+            selectedCountry ? getClass(prop.key) : 'bg-gray-300 text-gray-600'
+          ">
+          <span class="text-gray-400 text-xm">{{ prop.key | titlecase }}</span>
+          <span class="text-xl">{{
+            selectedCountry ? selectedCountry[prop.key] : '&nbsp;'
+          }}</span>
+        </li>
+      </ng-container>
+
+      <li
+        class="w-full flex flex-col h-fit rounded-md p-2"
+        [ngClass]="
+          selectedCountry
+            ? {
+                'bg-red-100': getDirection() !== 'Right on the spot',
+                'bg-green-100': getDirection() === 'Right on the spot',
+              }
+            : 'bg-gray-300 text-gray-600'
+        ">
+        <span class="text-gray-400 text-xm">Direction</span>
+        <span class="text-xl">{{
+          selectedCountry ? getDirection() : '&nbsp;'
+        }}</span>
+      </li>
+    </ul>
+  </div>
+
+  <app-win-dialog
+    *ngIf="showModal"
+    (playAgain)="onPlayAgain()"
+    class="animate-fade-in" />
+</section>
